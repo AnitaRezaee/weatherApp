@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
-import { Button, InputAdornment, Typography } from "@material-ui/core";
+import { Button } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   row: {
@@ -15,15 +15,17 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const SearchBar: React.FC = () => {
+type SearchBarProps = {
+  city: string;
+  handleCityChange: (input: React.ChangeEvent<HTMLInputElement>) => void;
+  setWeatherContent: () => void;
+};
+export const SearchBar: React.FC<SearchBarProps> = ({
+  city,
+  handleCityChange,
+  setWeatherContent,
+}: SearchBarProps) => {
   const classes = useStyles();
-  const [city, setCity] = useState("");
-
-  const handleCityChange = (input: React.ChangeEvent<HTMLInputElement>) => {
-    setCity(input.target.value);
-  };
-
-  const buttonSelectHandler = () => {};
 
   return (
     <div className={classes.row}>
@@ -40,7 +42,7 @@ export const SearchBar: React.FC = () => {
       />
       <Button
         className={classes.button}
-        onClick={buttonSelectHandler}
+        onClick={setWeatherContent}
         variant="contained"
       >
         Set
