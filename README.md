@@ -1,6 +1,10 @@
-# Getting Started with Create React App
+# Weather Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
+
+This weather application was created for the purpose of learning React framework. 
+
+⚠️ ** I will be adding a feature to this application where a spotify playlist would be suggested to the user based on the forecast of the searched city. Stay tuned!
 
 ## Available Scripts
 
