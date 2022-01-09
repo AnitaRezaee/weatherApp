@@ -4,8 +4,8 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    margin: theme.spacing(2, 1, 0, 1),
-    height: "max-content",
+    width: "max-content",
+    display: "inline-block",
   },
 }));
 

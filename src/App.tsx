@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import CustomCard from "./components/cards/CustomCard";
+import PreviewImg from "./components/previewImg";
 import SearchBar from "./components/searchbar";
 import WeatherContent from "./components/weatherContent/weatherContent";
 
@@ -35,21 +36,24 @@ function App() {
         console.log(err);
       });
   };
-
+  let content = <PreviewImg />;
+  if (temperature && discrip !== "") {
+    content = (
+      <WeatherContent
+        temperature={temperature}
+        discription={discrip}
+        icon={icon}
+      />
+    );
+  }
   return (
     <div className="App">
       <SearchBar
-        city={city}
-        handleCityChange={handleCityChange}
-        setWeatherContent={setWeatherContent}
+        city = {city}
+        handleCityChange = {handleCityChange}
+        setWeatherContent = {setWeatherContent}
       />
-      <CustomCard>
-        <WeatherContent
-          temperature={temperature}
-          discription={discrip}
-          icon={icon}
-        />
-      </CustomCard>
+      <CustomCard>{content}</CustomCard>
     </div>
   );
 }

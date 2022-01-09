@@ -1,5 +1,4 @@
 import React from "react";
-import IconDisplay from "./iconDisplay";
 import ClearNight from "../../common/images/Clear-night.png";
 import ClearDay from "../../common/images/Clear-day.png";
 import CloudsDay from "../../common/images/Clouds-day.png";
@@ -9,6 +8,7 @@ import Rain from "../../common/images/Rain.png";
 import Snow from "../../common/images/Snow.png";
 import Thunderstorm from "../../common/images/Thunderstorm.png";
 import Tornado from "../../common/images/Tornado.png";
+import Music from "../../common/images/Music.jpg";
 
 type IconProps = {
   icon: string;
@@ -49,7 +49,7 @@ export const Icon: React.FC<IconProps> = ({ icon, discription }: IconProps) => {
           case "Tornado":
             return <img src={Tornado} alt={discription} />;
           default:
-            return <IconDisplay discription={discription} />;
+            return <img src={Music} alt="default pic" width={600} />;
         }
       })()}
     </div>
