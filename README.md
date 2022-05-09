@@ -2,7 +2,7 @@
 
 ## Description
 
-This weather application was created for the purpose of learning React framework. 
+This project is a weather application that allows users to search for a city and country to see the forecast.
 
 ⚠️ ** I will be adding a feature to this application where a spotify playlist would be suggested to the user based on the forecast of the searched city. Stay tuned!
 
