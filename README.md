@@ -6,6 +6,10 @@ This project is a weather application that allows users to search for a city and
 
 ⚠️ ** I will be adding a feature to this application where a spotify playlist would be suggested to the user based on the forecast of the searched city. Stay tuned!
 
+<img width="964" alt="Screen Shot 2022-05-08 at 6 21 58 PM" src="https://user-images.githubusercontent.com/44530495/167322071-9a83d921-e22a-46ab-a6cb-3bbe8262f07e.png">
+
+<img width="630" alt="Screen Shot 2022-05-08 at 6 26 03 PM" src="https://user-images.githubusercontent.com/44530495/167322108-5803193d-423b-4b04-9e99-4c08f1003275.png">
+
 ## Available Scripts
 
 In the project directory, you can run:
